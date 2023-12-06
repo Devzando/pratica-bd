@@ -5,8 +5,8 @@ const prisma = new PrismaClient();
 async function createUser() {
   const newUser = await prisma.user.create({
     data: {
-      name: 'John Doe',
-      email: 'john@example.com',
+      name: 'gabriel',
+      email: 'gabriel@example.com',
     },
   });
 
@@ -45,7 +45,7 @@ async function main() {
 
   const userIdToUpdate = 3;
 
-//   await updateUser(userIdToUpdate, { name: 'Updated Name' });
+//   await updateUser(userIdToUpdate, { name: 'teste' });
 //   await getAllUsers();
 
   await deleteUser(userIdToUpdate);
